@@ -13,6 +13,10 @@ class Upload extends Contoller{
 
         $data['page_title'] = 'Upload Image';
 
+        // check if the user is logged in or nah
+        $user = $this->loadModel("user");
+        $data['is_logged_in'] = $user->is_logged_in();
+
         if(isset($_FILES['file'])){
             
             $model = $this->loadModel("upload_file");

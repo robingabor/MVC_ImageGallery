@@ -4,7 +4,6 @@ class Database
 {
 
     public function db_connect(){
-
         
         try {
             //code...
@@ -20,7 +19,7 @@ class Database
         $db = $this->db_connect();
         $stmt = $db->prepare($query);        
 
-        if(count($data) > 1){
+        if(count($data) >= 1){
             
             $check = $stmt->execute($data);
         }
@@ -45,7 +44,7 @@ class Database
         $db = $this->db_connect();
         $stmt = $db->prepare($query);        
 
-        if(count($data) > 1){
+        if(count($data) >= 1){
             
             $check = $stmt->execute($data);
         }

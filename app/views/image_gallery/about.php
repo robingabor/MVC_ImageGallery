@@ -7,6 +7,7 @@
         <div class="row mb-4">
             <h2 class="col-12 tm-text-primary">
                 About Catalog-Z Website Template
+                
             </h2>
         </div>
         <div class="row tm-mb-74 tm-row-1640">            
